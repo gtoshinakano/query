@@ -71,7 +71,9 @@ queryClient.setQueryData(
   (oldData) => oldData ? {
     ...oldData,
     title: 'my new post title'
-  } : oldData
+  } : {
+    title: 'my new post title'
+  }
 )
 ```
 [//]: # 'Example3'
